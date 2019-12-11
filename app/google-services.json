@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "293731506031",
+    "firebase_url": "https://questionshare-a78a1.firebaseio.com",
+    "project_id": "questionshare-a78a1",
+    "storage_bucket": "questionshare-a78a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293731506031:android:4e8afdd157ddba00e43a9a",
+        "android_client_info": {
+          "package_name": "com.example.questionshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293731506031-8r4bk1prjeiade1apgdjvp6kleo6abgd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.questionshare",
+            "certificate_hash": "db92d15db6985d880db2b1c8584c30156186c43f"
+          }
+        },
+        {
+          "client_id": "293731506031-d041o3ugr8ustm65khjvjn9atri0joqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2b9OdqmbNX1c787LzhDh-pDsQXnwqiBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293731506031-d041o3ugr8ustm65khjvjn9atri0joqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
