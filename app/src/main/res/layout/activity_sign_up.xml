@@ -16,4 +16,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+    <EditText
+        android:id="@+id/SignUPMail"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="20dp"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/SignUpPassword"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/SignUpButton"
+        android:text="@string/sign_up"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
 </LinearLayout>
