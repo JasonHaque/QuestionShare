@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.questionshare.R
+import com.example.questionshare.Views.ProfileView
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -28,7 +30,11 @@ class LoginActivity : AppCompatActivity() {
                 toastify("Fill up the fields properly")
                 return@setOnClickListener
             }
-
+            FirebaseAuth.getInstance().signInWithEmailAndPassword(email,pass).addOnSuccessListener {
+                toastify("Successfully Logged in")
+                val intent=Intent(this,ProfileView::class.java)
+                startActivity(intent)
+            }
         }
     }
     fun validateInputs(email:String,pass:String): Boolean{
