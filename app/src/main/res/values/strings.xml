@@ -10,4 +10,5 @@
     <string name="creative_question">Creative Question</string>
     <string name="log_out">Log Out</string>
     <string name="goto_admin_prompt">Goto Admin Prompt</string>
+    <string name="enter_admin_passcode">Enter admin passcode</string>
 </resources>
