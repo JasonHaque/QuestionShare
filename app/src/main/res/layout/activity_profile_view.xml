@@ -18,6 +18,13 @@
         android:id="@+id/user_view"
         android:textSize="22sp"
         android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/question_view"
+        android:text="@string/go_to_question"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
 </LinearLayout>
