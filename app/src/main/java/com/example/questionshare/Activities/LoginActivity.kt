@@ -14,6 +14,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        checkUserStatus()
         bindListeners()
     }
 
@@ -47,5 +48,11 @@ class LoginActivity : AppCompatActivity() {
     }
     fun toastify(message:String){
         Toast.makeText(this,message, Toast.LENGTH_SHORT).show()
+    }
+    fun checkUserStatus(){
+        if (FirebaseAuth.getInstance().currentUser != null){
+            val intent=Intent(this,ProfileView::class.java)
+            startActivity(intent)
+        }
     }
 }
