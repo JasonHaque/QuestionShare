@@ -7,4 +7,5 @@
     <string name="go_to_question">Go to Question</string>
     <string name="go_to_mcq_question">Go to MCQ question</string>
     <string name="go_to_creative_question">Go to Creative Question</string>
+    <string name="creative_question">Creative Question</string>
 </resources>
