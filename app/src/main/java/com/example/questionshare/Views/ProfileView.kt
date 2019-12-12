@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.questionshare.Activities.LoginActivity
+import com.example.questionshare.Admin.AdminActivity
 import com.example.questionshare.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_profile_view.*
@@ -23,6 +24,10 @@ class ProfileView : AppCompatActivity() {
         log_out.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
             val intent=Intent(this,LoginActivity::class.java)
+            startActivity(intent)
+        }
+        goto_admin_prompt.setOnClickListener {
+            val intent=Intent(this,AdminActivity::class.java)
             startActivity(intent)
         }
     }
