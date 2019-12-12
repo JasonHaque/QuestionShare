@@ -1,13 +1,22 @@
 package com.example.questionshare.Views
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.questionshare.R
+import kotlinx.android.synthetic.main.activity_profile_view.*
 
 class ProfileView : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile_view)
+        bindListeners()
+    }
+    fun bindListeners(){
+        goto_question_view.setOnClickListener {
+            val intent=Intent(this,QuestionView::class.java)
+            startActivity(intent)
+        }
     }
 }
