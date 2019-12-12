@@ -1,5 +1,6 @@
 package com.example.questionshare.Admin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -27,6 +28,12 @@ class AdminActivity : AppCompatActivity() {
                 Toast.makeText(this,"Not authorised User",Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+            if(passcode != "jason1163"){
+                Toast.makeText(this,"Not correct Passcode",Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+            val intent= Intent(this,SetQuestion::class.java)
+            startActivity(intent)
         }
     }
 }
