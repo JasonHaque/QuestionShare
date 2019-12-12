@@ -14,8 +14,16 @@
         android:layout_marginBottom="60dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/question_recycler"
+    <Button
+        android:id="@+id/goto_mcq"
+        android:text="@string/go_to_mcq_question"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/goto_cq"
+        android:text="@string/go_to_creative_question"
+        android:layout_marginBottom="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
