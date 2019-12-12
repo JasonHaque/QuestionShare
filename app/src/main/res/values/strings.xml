@@ -8,4 +8,5 @@
     <string name="go_to_mcq_question">Go to MCQ question</string>
     <string name="go_to_creative_question">Go to Creative Question</string>
     <string name="creative_question">Creative Question</string>
+    <string name="log_out">Log Out</string>
 </resources>
