@@ -26,7 +26,7 @@
     <Button
         android:id="@+id/unlock_question_pannel"
         android:layout_gravity="center"
-        android:text="Unlock Question Pannel"
+        android:text="@string/unlock_question_panel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
