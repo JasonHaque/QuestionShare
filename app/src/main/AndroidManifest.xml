@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Admin.CreateCQ"></activity>
+        <activity android:name=".Admin.CreateMCQ"></activity>
+        <activity android:name=".Admin.CreateCQ" />
         <activity android:name=".Admin.SetQuestion" />
         <activity android:name=".Admin.AdminActivity" />
         <activity android:name=".Views.MultipleChoiceQuestionView" />
