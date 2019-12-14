@@ -1,9 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<ScrollView android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".Admin.CreateMCQ">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+        <TextView
+            android:id="@+id/name_of_exam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXAM NAME"
+            android:textSize="42sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="36dp"
+            android:layout_marginTop="24dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Question_number_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="1"
+                android:textStyle="bold"
+                android:layout_marginRight="14dp"/>
+            <EditText
+                android:id="@+id/Question_text"
+                android:hint="Enter The Question Here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="A. "
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/OptionA"
+                android:hint="Option A"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="B. "
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/OptionB"
+                android:hint="Option B"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="C. "
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/OptionC"
+                android:hint="Option C"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="D. "
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/OptionD"
+                android:hint="Option D"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Enter The Correct Option Number"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/OptionChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="A/B/C/D" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:layout_marginTop="8dp">
+            <Button
+                android:id="@+id/question_button"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:text="Add"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/add_question_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Question"
+                android:textSize="22sp"
+                android:layout_marginTop="18dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/create_exam_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Exam"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</ScrollView>

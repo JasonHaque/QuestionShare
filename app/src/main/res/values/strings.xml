@@ -12,4 +12,6 @@
     <string name="goto_admin_prompt">Goto Admin Prompt</string>
     <string name="enter_admin_passcode">Enter admin passcode</string>
     <string name="unlock_question_panel">Unlock Question Panel</string>
+    <string name="enter_your_question">Enter your Question?</string>
+    <string name="_1">1</string>
 </resources>
