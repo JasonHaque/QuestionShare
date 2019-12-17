@@ -14,7 +14,7 @@ class SetQuestion : AppCompatActivity() {
         bindWigets()
     }
 
-    fun bindWigets(){
+    private fun bindWigets(){
         type_mcq.setOnClickListener {
             val intent =Intent(this,CreateMCQ::class.java)
             startActivity(intent)

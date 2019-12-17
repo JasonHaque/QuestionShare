@@ -16,7 +16,7 @@ class ProfileView : AppCompatActivity() {
         setContentView(R.layout.activity_profile_view)
         bindListeners()
     }
-    fun bindListeners(){
+    private fun bindListeners(){
         goto_question_view.setOnClickListener {
             val intent=Intent(this,QuestionView::class.java)
             startActivity(intent)

@@ -17,7 +17,7 @@ class AdminActivity : AppCompatActivity() {
         bindWidgets()
     }
 
-    fun bindWidgets(){
+    private fun bindWidgets(){
         unlock_question_pannel.setOnClickListener {
             val passcode =admin_password.text.toString()
             if (passcode.isEmpty()){

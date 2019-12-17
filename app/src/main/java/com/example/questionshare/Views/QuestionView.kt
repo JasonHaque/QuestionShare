@@ -13,7 +13,7 @@ class QuestionView : AppCompatActivity() {
         setContentView(R.layout.activity_question_view)
         bindListeners()
     }
-    fun bindListeners(){
+    private fun bindListeners(){
         goto_cq.setOnClickListener {
             val intent=Intent(this,CreativeQuestionView::class.java)
             startActivity(intent)
